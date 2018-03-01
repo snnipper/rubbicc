@@ -1,0 +1,38 @@
+{
+    "name": "karddell/rubbicc",
+    "description": "generic driver sms for laravel",
+    "type": "library",
+    "require": {
+        "php": "^7",
+        "illuminate/support": "^5.5", 
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "orchestra/testbench": "^3.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "snnipper",
+            "email": "gsnnipper@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rubbicc\\": "src/Rubbicc"
+        },
+        "files": [
+            "src/Rubbicc/functions.php"
+        ]
+    },
+    "extra": {
+        "component": "package",
+        "laravel": {
+            "providers": [
+                "Rubbicc\\RubbiccServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
