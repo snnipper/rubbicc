@@ -32,7 +32,7 @@ class RubbiccServiceProvider extends ServiceProvider
 	public function register()
 	{
 		$gateway = Config::get('rubbick.gateway');
-		$this->app->bind('rubbicc', 'Rubbicc\Rubbicc');
+		$this->app->bind('rubbicc', 'Rubbicc\Rubbicc'); 
 		$this->app->bind('Rubbicc\Gateways\GatewayInterface', 'Rubbicc\Gateways\\'.$gateway.'Gateway');
 	}
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Rubbicc;
+namespace Rubbicc\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class RubbiccFacade extends Facade
+class Rubbicc extends Facade
 {
     protected static function getFacadeAccessor()
     {

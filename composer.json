@@ -21,17 +21,17 @@
     "autoload": {
         "psr-4": {
             "Rubbicc\\": "src/Rubbicc"
-        },
-        "files": [
-            "src/Rubbicc/functions.php"
-        ]
+        }
     },
     "extra": {
         "component": "package",
         "laravel": {
             "providers": [
                 "Rubbicc\\RubbiccServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Rubbicc": "Rubbicc\\Facades\\Rubbicc"
+            }
         }
     },
     "minimum-stability": "stable"
