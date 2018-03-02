@@ -28,6 +28,7 @@ class ExpertTextingGateway implements GatewayInterface
 	{
 		foreach ($this->config as $key => $value){
 			$this->request .= $key."=".urlencode($value);
+			$this->request.= "&";
 		}
 		$this->request = substr($this->request, 0, strlen($this->request)-1);
 		return $this->request;
