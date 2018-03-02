@@ -18,6 +18,6 @@ if (! function_exists('rubbicc')) {
         if (! (is_null($to) || is_null($message))) {
             return $rubbicc->sendMessage($to, $message);
         }
-        return $rubbicc;
+        return $rubbicc; 
     }
 }

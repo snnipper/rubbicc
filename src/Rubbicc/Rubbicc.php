@@ -24,6 +24,10 @@ class Rubbicc
         return $this->gateway->sendSms($mobile,$message);
 	}
 
+	public function getBalance(){
+		return $this->gateway->getBalance();
+	}
+
 	public function gateway($name)
 	{
 		switch($name)
